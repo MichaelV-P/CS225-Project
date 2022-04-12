@@ -3,7 +3,7 @@
 //
 #include "Difficulty.h"
 //option for user to choose Difficulty in the game
-Difficulty::Difficulty() { }//Everything under this was public
+Difficulty::Difficulty() { userDifficulty = 'e'; }//Everything under this was public
 Difficulty::Difficulty(char userSelectedDifficulty) { userDifficulty = userSelectedDifficulty; }
 
 ostream& operator<<(ostream& os, const Difficulty& p) {

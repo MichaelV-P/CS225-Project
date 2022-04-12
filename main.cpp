@@ -20,7 +20,7 @@ using namespace std;
 
 int main()
 {
-    srand(time(NULL));
+    srand((unsigned int)time(NULL));
     string userName;
     string fileName = "playerData.txt";
     string player;
@@ -74,13 +74,16 @@ int main()
     pFile.close();
     cout<< "Here is where you rank against other players. "<< endl;
     ifstream pFile1;
-    pFile.open(fileName);
+    pFile1.open(fileName);
+    if (!pFile1) {
+        cout << "Couldn't open file." << endl;
+    }
     while(!pFile1.eof()){
         getline(pFile1, player);
         size_t pos = player.find(" ");
         playerName = player.substr(0,4);
         playerScore = player.substr(pos+1,4);
-        cout<<playerName<<playerScore<< endl; //comment this out when it works
+        //cout<<playerName<<playerScore<< endl; //comment this out when it works
         if(playerScore.length() <=0){
             break;
         }
