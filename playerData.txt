@@ -1,0 +1,12 @@
+beth: 3000
+john: 3000
+fuck: 800
+jams: 150
+race: 300
+zoey: 600
+kris: 0
+josh: 300
+jose: 450
+jule: 400
+kate: 1500
+jill: 600
