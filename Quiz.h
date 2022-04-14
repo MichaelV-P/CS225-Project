@@ -15,6 +15,7 @@ private:
     char chosenDifficulty;
 public:
     Quiz(char userSubject, char userDifficulty);
+    ~Quiz() { cout << "End of Quiz"; }
     int startQuiz();
 
 };
